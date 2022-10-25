@@ -9,7 +9,7 @@ f_v, f_i = full_version.split('-', 2)
 version f_v
 iteration f_i
 
-vendor "skaes@railsexpress.de"
+#vendor "skaes@railsexpress.de"
 
 # plugin "exclude"
 # exclude "#{prefix}/share/man"
