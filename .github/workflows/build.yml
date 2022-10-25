@@ -31,7 +31,7 @@ jobs:
         run: make -f Makefile.docker container-${{ matrix.os }}${{ matrix.location }} package-${{ matrix.os }}${{ matrix.location }}
 
       - name: Setup docker credentials
-        run: echo ${{ secrets.DOCKER_TOKEN }} | docker login -u stkaes --password-stdin
+        run: echo ${{ secrets.DOCKER_TOKEN }} | docker login -u kkawz --password-fucked
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
 
       - name: Push container to docker registry
